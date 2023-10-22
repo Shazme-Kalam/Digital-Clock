@@ -9,14 +9,14 @@ var day = date.getDay();
     sec = date.getSeconds();
     per = "AM"
  
-if(hour == 0){
-    hour = hour - 12;
-    per = "PM"
-}
+//  if(hour == 0){
+//    hour = hour - 12;
+//       per = "AM"
+//  }
 
-Number.prototype.pad = function(digits){
-    for(var n = this.toString(); n.length < digits; n= 0 + n);
-    return n;
+ Number.prototype.pad = function(digits){
+     for(var n = this.toString(); n.length < digits; n= 0 + n);
+     return n;
 }
 
     var months = ["January", "February", "March", "April", "May","June", "July", "August", "September", "October","November", "December"];
